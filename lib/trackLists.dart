@@ -1,4 +1,5 @@
 class Track {
   static String trackName;
-  static String notes;
+  static String trackString;
+  static List<dynamic> trackList;
 }

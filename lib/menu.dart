@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audio_cache.dart';
-import 'comp/routeButton.dart';
-import 'comp/titleGradient.dart';
+import 'components/routeButton.dart';
+import 'components/titleGradient.dart';
 
 class MyMenu extends StatelessWidget {
   void playSound(int soundNumber) {
@@ -18,10 +18,12 @@ class MyMenu extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Expanded(
-              flex: 3,
-              child: TitleGradient(
-                title: 'Xylophone78',
+            Flexible(
+              child: Expanded(
+                flex: 3,
+                child: TitleGradient(
+                  title: 'Xylophone78',
+                ),
               ),
             ),
             Expanded(
