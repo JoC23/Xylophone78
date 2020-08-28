@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gradient_text/gradient_text.dart';
+import 'package:Xylophone78/constants.dart';
 
 class TitleGradient extends StatelessWidget {
   TitleGradient({
@@ -8,16 +9,6 @@ class TitleGradient extends StatelessWidget {
   }) : super(key: key);
 
   final String title;
-  final List<Color> gradientColors = [
-    Colors.red,
-    Colors.orange,
-    Colors.yellow,
-    Colors.green,
-    Colors.cyan,
-    Colors.blue[700],
-    Colors.purple,
-    Colors.deepPurple
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +22,7 @@ class TitleGradient extends StatelessWidget {
         children: <Widget>[
           GradientText(
             title,
-            gradient: LinearGradient(colors: gradientColors),
+            gradient: LinearGradient(colors: kgradientColorList),
             style: TextStyle(
               fontSize: 70,
               fontWeight: FontWeight.bold,

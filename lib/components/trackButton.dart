@@ -12,12 +12,8 @@ class TrackButton extends StatelessWidget {
   final Color buttonBGcolor;
   final Color buttonTextcolor;
 
-  // TODO  try passing following 3 variables from JSON
   final String buttonTitle;
   final String trackNotes;
-  // TODO create a trackList and pass it here.
-  // TODO Make a generalised function.
-  // TODO Rename the notes to String.
   final Function playTrack;
 
   @override

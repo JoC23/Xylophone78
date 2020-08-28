@@ -90,9 +90,7 @@ class _TestState extends State<Test> {
                   title: 'Add Track',
                   icon: Icon(Icons.add),
                   bgcolor: Colors.green[800],
-                  onPress: () {
-                    // TODO Add track functionality
-                  },
+                  onPress: () {},
                 ),
               ],
             ),

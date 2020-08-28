@@ -1,9 +1,8 @@
-import 'package:Xylophone78/menu.dart';
 import 'package:flutter/material.dart';
-import 'menu.dart';
-import 'package:Xylophone78/xylo7.dart';
-import 'package:Xylophone78/xylo8.dart';
-import 'test.dart';
+import 'package:Xylophone78/screens/menuPage.dart';
+import 'package:Xylophone78/screens/xylo7.dart';
+import 'package:Xylophone78/screens/xylo8.dart';
+import 'package:Xylophone78/test.dart';
 
 void main() {
   runApp(MyApp());

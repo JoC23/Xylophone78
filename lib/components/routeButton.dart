@@ -26,7 +26,7 @@ class RouteButton extends StatelessWidget {
       padding: const EdgeInsets.all(14.0),
       child: ButtonTheme(
         height: 70.0,
-        minWidth: 300.0,
+        minWidth: 200.0,
         child: RaisedButton(
           color: buttonBGcolor,
           shape: RoundedRectangleBorder(

@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audio_cache.dart';
-import 'components/routeButton.dart';
-import 'components/titleGradient.dart';
+import 'package:Xylophone78/components/routeButton.dart';
+import 'package:Xylophone78/components/titleGradient.dart';
 
 class MyMenu extends StatelessWidget {
-  void playSound(int soundNumber) {
-    final player = AudioCache();
-    player.play('notes7/note$soundNumber.wav');
-  }
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -18,18 +12,18 @@ class MyMenu extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Flexible(
-              child: Expanded(
-                flex: 3,
-                child: TitleGradient(
-                  title: 'Xylophone78',
-                ),
+            Expanded(
+              flex: 3,
+              child: TitleGradient(
+                title: 'Xylophone78',
               ),
             ),
             Expanded(
-              flex: 5,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+              flex: 6,
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                padding: EdgeInsets.symmetric(vertical: 14.0, horizontal: 30.0),
+                // crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   RouteButton(
                       buttonBGcolor: Colors.red,
