@@ -6,6 +6,7 @@ import 'package:Xylophone78/components/trackButton.dart';
 import 'package:Xylophone78/components/titleGradient.dart';
 import 'package:Xylophone78/components/trackBottomButton.dart';
 import 'package:Xylophone78/playServices.dart';
+import 'package:audioplayers/audio_cache.dart';
 
 class Test extends StatefulWidget {
   @override
@@ -14,10 +15,12 @@ class Test extends StatefulWidget {
 
 class _TestState extends State<Test> {
   Future tracks;
+  AudioCache cache;
   @override
   void initState() {
     super.initState();
     tracks = syncTrack();
+    cache = AudioCache();
   }
 
   syncTrack() async {
@@ -53,7 +56,7 @@ class _TestState extends State<Test> {
                               TrackButton(
                                 buttonBGcolor:
                                     kgradientColorList[Random().nextInt(8)],
-                                buttonTextcolor: Colors.blueGrey[800],
+                                buttonTextcolor: Colors.blueGrey[900],
                                 buttonTitle: trackData[index]['title'],
                                 trackNotes:
                                     '>Notes: ${trackData[index]['trackString']}',
